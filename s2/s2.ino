@@ -7,7 +7,7 @@
 
 void setup() {
   pinMode(redPin, OUTPUT);
-  pinMode(grrenPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
   pinMode(whitePin, OUTPUT);
   pinMode(speedRegulator, INPUT);
@@ -15,7 +15,7 @@ void setup() {
 
 void loop() {
   analogWrite(redPin, random(1023));
-  analogWrite(grrenPin, random(1023));
+  analogWrite(greenPin, random(1023));
   analogWrite(bluePin, random(1023));
   analogWrite(whitePin, random(1023));
   delay(analogRead(speedRegulator));
